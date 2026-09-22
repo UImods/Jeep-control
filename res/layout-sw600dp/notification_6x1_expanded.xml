@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="58.0dip">
+        <ImageView android:id="@id/notif_badge" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/badge_1_classic_jeep" android:scaleType="fitCenter" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="11.799988sp" android:textStyle="bold" android:textColor="#fff5f7fa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2026 Wrangler Unlimited" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:textSize="8.5sp" android:textColor="#ffd7dce2" android:id="@id/notif_vehicle_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Rubicon Series 4x4 Rock-Trac" android:maxLines="1" android:includeFontPadding="false" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="2.0dip">
+                <TextView android:textSize="9.5sp" android:textStyle="bold" android:textColor="#fff5f7fa" android:gravity="center" android:id="@id/notif_parked_icon" android:background="@drawable/notif_state_box" android:layout_width="18.0dip" android:layout_height="18.0dip" android:text="P" android:includeFontPadding="false" />
+                <TextView android:textSize="11.299988sp" android:textStyle="bold" android:textColor="#fff5f7fa" android:id="@id/notif_parked_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="Parked • Locating…" android:maxLines="1" android:includeFontPadding="false" />
+                <ImageView android:id="@id/notif_directions" android:visibility="gone" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/ic_parked_directions" android:scaleType="fitCenter" android:contentDescription="Get directions" />
+                <TextView android:layout_width="0.0dip" android:layout_height="1.0dip" android:text="" android:layout_weight="1.0" />
+                <ImageView android:id="@id/notif_uconnect_connection_icon" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_notif_uconnect_connecting_user" android:scaleType="fitCenter" android:contentDescription="Uconnect connection" />
+                <ImageView android:id="@id/notif_obdlink_connection_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_notif_obdlink_connecting_user" android:scaleType="fitCenter" android:contentDescription="OBDLink MX+ connection" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/notif_status_row_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.35">
+            <ImageView android:id="@id/notif_exp_status_icon" android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/ic_notif_oem_lock" />
+            <TextView android:textSize="8.0sp" android:textColor="#ffe7ebf0" android:id="@id/notif_exp_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="Doors Locked" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:background="#66505a64" android:layout_width="1.0dip" android:layout_height="22.0dip" android:text="" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.05">
+            <ImageView android:id="@id/notif_armed_icon" android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/ic_notif_shield_green" />
+            <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ff35dd75" android:id="@id/notif_exp_status_armed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="ARMED" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:background="#66505a64" android:layout_width="1.0dip" android:layout_height="22.0dip" android:text="" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.2">
+            <ImageView android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/ic_notif_oem_fuel" />
+            <TextView android:textSize="7.799988sp" android:textColor="#ffe7ebf0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="Fuel" android:includeFontPadding="false" />
+            <TextView android:textSize="8.0sp" android:textColor="#ffe7ebf0" android:id="@id/notif_fuel_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="—" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/notif_status_row_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="3.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="22.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_notif_oem_oil_filled" />
+            <TextView android:textSize="8.5sp" android:textColor="#ffe7ebf0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="Oil Life" android:includeFontPadding="false" />
+            <TextView android:textSize="8.5sp" android:textColor="#fff5f7fa" android:id="@id/notif_oil_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="10%" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:background="#66505a64" android:layout_width="1.0dip" android:layout_height="24.0dip" android:text="" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.8">
+            <ImageView android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_notif_oem_tire_wheel" />
+            <TextView android:textSize="8.5sp" android:textColor="#ffe7ebf0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="Tires" android:includeFontPadding="false" />
+            <TextView android:textSize="8.5sp" android:textColor="#fff5f7fa" android:id="@id/notif_tires_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="39/40/40/39" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:textSize="8.0sp" android:textColor="#fff5f7fa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" PSI" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/notif_action_bar_bg" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="3.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/notif_lock" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_notif_oem_lock" />
+            <TextView android:textSize="8.299988sp" android:textColor="#fff5f7fa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="LOCK" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:background="#66505a64" android:layout_width="1.0dip" android:layout_height="30.0dip" android:text="" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/notif_unlock" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_notif_oem_unlock" />
+            <TextView android:textSize="8.299988sp" android:textColor="#fff5f7fa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="UNLOCK" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:background="#66505a64" android:layout_width="1.0dip" android:layout_height="30.0dip" android:text="" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/notif_climate" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_notif_oem_climate" />
+            <TextView android:textSize="8.299988sp" android:textColor="#fff5f7fa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="CLIMATE" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:background="#66505a64" android:layout_width="1.0dip" android:layout_height="30.0dip" android:text="" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/notif_map" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_notif_oem_pin" />
+            <TextView android:textSize="8.299988sp" android:textColor="#fff5f7fa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="MAP" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="8.399994sp" android:textColor="#ffb5bdc7" android:gravity="center|right" android:id="@id/notif_updated_value" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="18.0dip" android:text="Updated 8:27 PM" android:includeFontPadding="false" />
+</LinearLayout>

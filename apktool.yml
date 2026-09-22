@@ -1,0 +1,22 @@
+version: 2.11.1
+apkFileName: JEEP_Controls_v57_210_BLACK_FILLED_TRIM_WORDS_PERMANENT.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 26
+  targetSdkVersion: 35
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 285
+  versionName: 1.57.210-test
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- arsc
+- dex

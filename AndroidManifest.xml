@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ludo.jeepcontrols">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <queries>
+        <package android:name="com.fca.myconnect.nafta"/>
+    </queries>
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="JEEP Controls" android:roundIcon="@drawable/ic_launcher" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.ludo.jeepcontrols.NotificationActionActivity" android:noHistory="true" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:exported="false" android:name="com.ludo.jeepcontrols.SettingsActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.ludo.jeepcontrols.CustomizeActivity"/>
+        <activity android:exported="true" android:name="com.ludo.jeepcontrols.MainActivity" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="false" android:label="Modern Blue 2×2" android:name="com.ludo.jeepcontrols.WidgetS1_2x2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_style1_2x2"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="Mountain Dark 2×2" android:name="com.ludo.jeepcontrols.WidgetS2_2x2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_style2_2x2"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="Premium Gold 2×2" android:name="com.ludo.jeepcontrols.WidgetS3_2x2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_style3_2x2"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="Adventure Map 2×2" android:name="com.ludo.jeepcontrols.WidgetS4_2x2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_style4_2x2"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="Rugged Off-Road 2×2" android:name="com.ludo.jeepcontrols.WidgetS5_2x2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_style5_2x2"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="Modern Blue 3×1" android:name="com.ludo.jeepcontrols.WidgetS1_3x1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_style1_3x1"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="Mountain Dark 3×1" android:name="com.ludo.jeepcontrols.WidgetS2_3x1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_style2_3x1"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="Premium Gold 3×1" android:name="com.ludo.jeepcontrols.WidgetS3_3x1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_style3_3x1"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="Adventure Map 3×1" android:name="com.ludo.jeepcontrols.WidgetS4_3x1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_style4_3x1"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="Rugged Off-Road 3×1" android:name="com.ludo.jeepcontrols.WidgetS5_3x1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_style5_3x1"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.ludo.jeepcontrols.CommandReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.ludo.jeepcontrols.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.ludo.jeepcontrols.NotificationDismissReceiver"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="location" android:name="com.ludo.jeepcontrols.PhoneJeepTrackingService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.ludo.jeepcontrols.ClimateAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/auto_climate_accessibility_service"/>
+        </service>
+    </application>
+</manifest>

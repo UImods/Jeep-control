@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/widget_style_4_clip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:clipToOutline="true">
+        <ImageView android:id="@id/widget_art" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/widget_style_4_card3x1" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="31.0" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="31.0">
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <TextView android:id="@id/widget_lock" android:background="#01000000" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="16.0" android:contentDescription="Lock" />
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:id="@id/widget_unlock" android:background="#01000000" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="16.0" android:contentDescription="Unlock" />
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:id="@id/widget_climate" android:background="#01000000" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="17.0" android:contentDescription="Climate" />
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="47.0" />
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="38.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="54.0" />
+            <TextView android:id="@id/widget_location_map" android:background="#01000000" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="46.0" android:contentDescription="Location Map" />
+        </LinearLayout>
+        <TextView android:textSize="7.0sp" android:textColor="#ffffffff" android:layout_gravity="center|right|top" android:id="@id/widget_updated" android:background="@drawable/widget_style_4_map_overlay_pill" android:paddingLeft="4.0dip" android:paddingTop="1.5dip" android:paddingRight="4.0dip" android:paddingBottom="1.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:text="Updated • —" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:layout_gravity="center|right|top" android:id="@id/widget_refresh" android:background="#01000000" android:clickable="true" android:layout_width="60.0dip" android:layout_height="24.0dip" android:contentDescription="Refresh" />
+        <TextView android:id="@id/widget_fuel" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        <TextView android:id="@id/widget_oil_life" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        <TextView android:id="@id/widget_tires" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        <TextView android:id="@id/widget_tire_ok" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        <TextView android:id="@id/widget_tire_low" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        <TextView android:id="@id/widget_odometer" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        <Chronometer android:id="@id/widget_countdown" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format="Next %s" android:countDown="true" />
+        <ImageView android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip" android:src="@drawable/widget_style_4_visible_outline" android:scaleType="fitXY" android:contentDescription="@null" />
+        <TextView android:id="@id/widget_status" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        <TextView android:id="@id/widget_doors" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        <TextView android:id="@id/widget_climate_state" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+    </FrameLayout>
+</FrameLayout>

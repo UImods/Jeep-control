@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service android:description="@string/auto_climate_accessibility_description" android:accessibilityEventTypes="typeNotificationStateChanged|typeViewClicked|typeWindowContentChanged|typeWindowStateChanged" android:packageNames="com.fca.myconnect.nafta" android:accessibilityFeedbackType="feedbackGeneric" android:notificationTimeout="100" android:canRetrieveWindowContent="true" android:canPerformGestures="true" android:canTakeScreenshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

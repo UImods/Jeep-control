@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/main_page_bg" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="18.0dip" android:paddingTop="14.0dip" android:paddingRight="18.0dip" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="64.0dip">
+            <ImageView android:padding="5.0dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/app_master_lock" android:onClick="goBack" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="Settings / Secure Setup" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="10.5sp" android:textColor="#ff9da8b4" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Configure your connection securely." />
+        <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:paddingLeft="14.0dip" android:paddingTop="14.0dip" android:paddingRight="14.0dip" android:paddingBottom="26.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ludo.jeepcontrols.UconnectDiagnosticView android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/settings_item_gap" android:showDividers="middle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/oem_tile" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="96.0dip" android:layout_marginTop="28.0dip">
+            <ImageView android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/app_master_settings" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Diagnostics / OBD" />
+                <TextView android:textSize="9.0sp" android:textColor="#ff9da8b4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="OBDLink MX+ integration after hardware testing. Current Uconnect + GPS behavior remains unchanged." />
+            </LinearLayout>
+            <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="24.0dip" android:layout_height="fill_parent" android:text="›" />
+        </LinearLayout>
+        <LinearLayout android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip">
+            <EditText android:id="@id/main_url" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+            <EditText android:id="@id/main_token" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

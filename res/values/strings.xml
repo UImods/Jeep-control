@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_description">Lock, unlock, climate handoff, location map, and live vehicle status for your Jeep.</string>
+    <string name="auto_climate_accessibility_description">Automates Climate and Location Map only after explicit controls, and reads Oil Life and Tire PSI from the official Jeep app in the foreground after Refresh.</string>
+</resources>

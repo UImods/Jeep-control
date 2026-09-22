@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Vehicle Emblem" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff8f9aa5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show your Jeep spirit" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/badge_grid" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="92.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/badge_tile_1" android:tag="0" android:background="@drawable/oem_hero_bg" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:layout_weight="1.0" android:onClick="onBadgeSelected">
+                <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/badge_1_classic_jeep" android:scaleType="fitCenter" />
+                <TextView android:textSize="9.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Classic" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/badge_tile_2" android:tag="1" android:background="@drawable/oem_gold_button" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" android:onClick="onBadgeSelected">
+                <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/badge_2_jeep_controls" android:scaleType="fitCenter" />
+                <TextView android:textSize="8.299988sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jeep Controls" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/badge_tile_3" android:tag="2" android:background="@drawable/oem_gold_button" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_weight="1.0" android:onClick="onBadgeSelected">
+                <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/badge_3_jeep_companion" android:scaleType="fitCenter" />
+                <TextView android:textSize="8.5sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Companion" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="92.0dip" android:layout_marginTop="6.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/badge_tile_4" android:tag="3" android:background="@drawable/oem_gold_button" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:layout_weight="1.0" android:onClick="onBadgeSelected">
+                <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/badge_4_4x4_controls" android:scaleType="fitCenter" />
+                <TextView android:textSize="8.5sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4x4 Controls" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/badge_tile_5" android:tag="4" android:background="@drawable/oem_gold_button" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" android:onClick="onBadgeSelected">
+                <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/badge_5_jc_companion" android:scaleType="fitCenter" />
+                <TextView android:textSize="8.299988sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JC Companion" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/badge_tile_6" android:tag="5" android:background="@drawable/oem_gold_button" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_weight="1.0" android:onClick="onBadgeSelected">
+                <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/badge_6_trail_controls" android:scaleType="fitCenter" />
+                <TextView android:textSize="8.299988sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trail Controls" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="92.0dip" android:layout_marginTop="6.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/badge_tile_7" android:tag="6" android:background="@drawable/oem_gold_button" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:layout_weight="1.0" android:onClick="onBadgeSelected">
+                <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/badge_7_wranger_grille" android:scaleType="fitCenter" />
+                <TextView android:textSize="8.099976sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wrangler Grille" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/badge_tile_8" android:tag="7" android:background="@drawable/oem_gold_button" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" android:onClick="onBadgeSelected">
+                <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/badge_8_mountain_trail" android:scaleType="fitCenter" />
+                <TextView android:textSize="8.099976sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mountain Trail" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/badge_tile_9" android:tag="8" android:background="@drawable/oem_gold_button" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_weight="1.0" android:onClick="onBadgeSelected">
+                <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/badge_9_jc_monogram" android:scaleType="fitCenter" />
+                <TextView android:textSize="8.299988sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JC Monogram" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/badge_selected_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="✓ Selected: Classic Jeep" />
+    <ImageView android:id="@id/badge_preview_expanded" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" android:src="@drawable/badge_1_classic_jeep" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Vehicle Trim" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff8f9aa5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Match your vehicle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="42.0dip">
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:tag="AUTO" android:background="@drawable/oem_gold_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:text="AUTO" android:layout_weight="1.0" android:onClick="onTrimSelected" />
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffc857" android:gravity="center" android:tag="RUBICON" android:background="@drawable/oem_hero_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="4.0dip" android:text="RUBICON" android:layout_weight="1.0" android:onClick="onTrimSelected" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:tag="SAHARA" android:background="@drawable/oem_gold_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="SAHARA" android:layout_weight="1.0" android:onClick="onTrimSelected" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="6.0dip">
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:tag="WILLYS" android:background="@drawable/oem_gold_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:text="WILLYS" android:layout_weight="1.0" android:onClick="onTrimSelected" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:tag="SPORT" android:background="@drawable/oem_gold_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="4.0dip" android:text="SPORT" android:layout_weight="1.0" android:onClick="onTrimSelected" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:tag="SPORT_S" android:background="@drawable/oem_gold_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="SPORT S" android:layout_weight="1.0" android:onClick="onTrimSelected" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="6.0dip">
+            <TextView android:textSize="9.0sp" android:textColor="#ffffffff" android:gravity="center" android:tag="HIGH_ALTITUDE" android:background="@drawable/oem_gold_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:text="HIGH ALT" android:layout_weight="1.0" android:onClick="onTrimSelected" />
+            <TextView android:textSize="9.5sp" android:textColor="#ffffffff" android:gravity="center" android:tag="RUBICON_X" android:background="@drawable/oem_gold_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="4.0dip" android:text="RUBICON X" android:layout_weight="1.0" android:onClick="onTrimSelected" />
+            <TextView android:textSize="9.0sp" android:textColor="#ffffffff" android:gravity="center" android:tag="RUBICON_392" android:background="@drawable/oem_gold_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="RUBICON 392" android:layout_weight="1.0" android:onClick="onTrimSelected" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/trim_selected_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Vehicle Trim: Auto" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="8.0dip">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Widget Styles" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff8f9aa5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10 real previews" />
+    </LinearLayout>
+    <TextView android:textSize="10.0sp" android:textColor="#ffaab4bf" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Choose a look for your home screen widget. All styles use their actual design." />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="2 × 2 Widgets" />
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="196.0dip" android:fillViewport="false" android:overScrollMode="never">
+        <LinearLayout android:orientation="horizontal" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip">
+                <ImageView android:background="@android:color/transparent" android:layout_width="170.0dip" android:layout_height="160.0dip" android:src="@drawable/widget_picker_real_s1_2x2" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.5sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Modern Blue 2×2" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip">
+                <ImageView android:background="@android:color/transparent" android:layout_width="170.0dip" android:layout_height="160.0dip" android:src="@drawable/widget_picker_real_s2_2x2" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.5sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Mountain Dark 2×2" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip">
+                <ImageView android:background="@android:color/transparent" android:layout_width="170.0dip" android:layout_height="160.0dip" android:src="@drawable/widget_picker_real_s3_2x2" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.5sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Premium Gold 2×2" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip">
+                <ImageView android:background="@android:color/transparent" android:layout_width="170.0dip" android:layout_height="160.0dip" android:src="@drawable/widget_picker_real_s4_2x2" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.5sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Adventure Map 2×2" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="180.0dip" android:layout_height="fill_parent">
+                <ImageView android:background="@android:color/transparent" android:layout_width="170.0dip" android:layout_height="160.0dip" android:src="@drawable/widget_picker_real_s5_2x2" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.5sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Rugged Off-Road 2×2" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginTop="4.0dip" android:text="3 × 1 Widgets" />
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="142.0dip" android:fillViewport="false" android:overScrollMode="never">
+        <LinearLayout android:orientation="horizontal" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="252.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip">
+                <ImageView android:background="@android:color/transparent" android:layout_width="242.0dip" android:layout_height="103.0dip" android:src="@drawable/widget_picker_real_s1_3x1" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.5sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Modern Blue 3×1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="252.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip">
+                <ImageView android:background="@android:color/transparent" android:layout_width="242.0dip" android:layout_height="103.0dip" android:src="@drawable/widget_picker_real_s2_3x1" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.5sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Mountain Dark 3×1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="252.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip">
+                <ImageView android:background="@android:color/transparent" android:layout_width="242.0dip" android:layout_height="103.0dip" android:src="@drawable/widget_picker_real_s3_3x1" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.5sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Premium Gold 3×1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="252.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip">
+                <ImageView android:background="@android:color/transparent" android:layout_width="242.0dip" android:layout_height="103.0dip" android:src="@drawable/widget_picker_real_s4_3x1" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.5sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Adventure Map 3×1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="252.0dip" android:layout_height="fill_parent">
+                <ImageView android:background="@android:color/transparent" android:layout_width="242.0dip" android:layout_height="103.0dip" android:src="@drawable/widget_picker_real_s5_3x1" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.5sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Rugged Off-Road 3×1" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

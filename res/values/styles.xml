@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:buttonStyle">@style/OemButtonStyle</item>
+        <item name="android:editTextStyle">@style/OemEditTextStyle</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#ffc39a42</item>
+        <item name="android:statusBarColor">#ff080b0f</item>
+        <item name="android:navigationBarColor">#ff080b0f</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="OemButtonStyle" parent="@android:style/Widget.Material.Button">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/oem_gold_button</item>
+        <item name="android:minHeight">38.0dip</item>
+    </style>
+    <style name="OemEditTextStyle" parent="@android:style/Widget.Material.EditText">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">#ff82909d</item>
+        <item name="android:background">@drawable/oem_input</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:minHeight">42.0dip</item>
+    </style>
+</resources>
